@@ -229,7 +229,9 @@ namespace Toggl.Services
                     HttpWebRequest authRequest = ManufactureRequest(apiRequest);
 
                     authResponse = (HttpWebResponse)authRequest.GetResponse();
+#if DEBUG
                     Console.WriteLine(((int)authResponse.StatusCode).ToString());
+#endif
                     break;
                 }
                 catch (System.Net.WebException ex)
@@ -244,7 +246,9 @@ namespace Toggl.Services
                         if (response != null)
                         {
                             int statusCode = (int)response.StatusCode;
+#if DEBUG
                             Console.WriteLine(statusCode.ToString());
+#endif
                             if (statusCode == 429)
                             {
                                 Thread.Sleep(1500); // 1500ms based on cursory testing
