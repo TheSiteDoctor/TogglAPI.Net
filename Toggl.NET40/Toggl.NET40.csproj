@@ -217,6 +217,7 @@
     <Compile Include="..\Toggl\Toggl.cs">
       <Link>Toggl.cs</Link>
     </Compile>
+    <Compile Include="QueryObjects\ItemStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">

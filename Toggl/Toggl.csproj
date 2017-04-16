@@ -82,6 +82,7 @@
     <Compile Include="Interfaces\IUserServiceAsync.cs" />
     <Compile Include="Interfaces\IWorkspaceServiceAsync.cs" />
     <Compile Include="QueryObjects\DetailedReportParams.cs" />
+    <Compile Include="QueryObjects\ItemStatus.cs" />
     <Compile Include="QueryObjects\ReportParams.cs" />
     <Compile Include="Responses\ApiResponse.cs">
       <SubType>Code</SubType>
